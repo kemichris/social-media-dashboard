@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* top container styling */
+
+.container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+h1 {
+    margin-bottom: 0;
+    font-size: 1.7rem;
+}
+
+.title-p {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: hsl(228, 12%, 44%);
+}
+
+/* styling for switch */
+
+.label {
+    width: 60px;
+    height: 30px;
+    background-color: lightgray;
+    position: absolute;
+    border-radius: 20px;
+    top: 2.5rem;
+    right: 9rem;
+    cursor: pointer;
+}
+
+.label:hover {
+    background-image: linear-gradient(45deg,
+    hsl(210deg 78% 56%) 0%,
+    hsl(189deg 100% 44%) 50%,
+    hsl(146deg 68% 55%) 100%);
+}
+
+.circle {
+    width: 24px;
+    background-color: white;
+    height: 24px;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 33px;
+    animation: toggleOff 0.4s linear forwards;
+
+}
+
+
+.input {
+   display: none;
+}
+
+
+.input:checked + .label{
+    background-image: linear-gradient(45deg,
+    hsl(210deg 78% 56%) 0%,
+    hsl(189deg 100% 44%) 50%,
+    hsl(146deg 68% 55%) 100%);
+}
+
+.input:checked + .label .circle {
+    background-color: white;
+    animation: toggleOn 0.4s linear forwards;
+}
+
+@keyframes toggleOn {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-30px);
+    }
+}
+
+@keyframes toggleOff {
+    0% {
+        transform: translateX(-30px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* styling for header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    height: 14rem;
+    padding: 0 10rem;
+    position: relative;
+    
+}
+
+.screen-mode {
+    display: flex;
+
+}
+
+.mode-text {
+    position: absolute;
+    right: 14rem;
+    top: 1.8rem;
+    font-size: 14px;
+    font-weight: 700;
+    color: hsl(228, 12%, 44%);
+}
+
+/* main section */
+/* top container */
+
+.top-container {
+    display: flex;
+    margin: 0 10rem;
+}
+
+.cont {
+    width: 255px;
+    height: 216px;
+    text-align: center;
+    background-color: hsl(225, 100%, 98%);
+    margin-left: 2rem;
+    margin-top: -5rem;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.cont:hover {
+    filter: brightness(95%);
+}
+
+.active.cont:hover {
+  filter: brightness(130%);
+}
+
+.top-container .cont1 {
+    border-top: 5px solid hsl(208, 92%, 53%);
+}
+
+.top-container .cont2 {
+    border-top: 5px solid hsl(203, 89%, 53%);
+}
+
+.top-container .cont3 {
+    border-top: 5px solid;
+    border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%))27;
+}
+
+.top-container .cont4 {
+    border-top: 5px solid hsl(348, 97%, 39%);
+}
+
+.cont1 {
+    margin-left: 0;
+}
+
+.top-p-numbers {
+    font-size: 3.45rem;
+    margin: 0;
+}
+
+.top-p-letters {
+    letter-spacing: 5px;
+    margin: 2px;
+    font-size: 12px;
+    color: hsl(228, 12%, 44%);
+}
+
+.inner-cont {
+    display: flex;
+    width: inherit;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.inner-cont p {
+    padding-left: 5px;
+}
+
+/* Style for bottom container section */
+
+.overview {
+    font-weight: 700;
+    color: hsl(228, 12%, 44%);
+    font-size: 1.7rem;
+    margin: 2rem 10rem;
+}
+
+.bottom-container {
+    margin: 0 10rem 5rem;
+}
+
+.first-inner, .second-inner{
+    display: flex;
+}
+
+.first-inner {
+    margin-top: 0;
+}
+
+.second-inner {
+    margin-top: 2rem;
+}
+
+.bottom-cont {
+    min-width: 208px;
+    height: 125px;
+    padding: 0 1.5rem;
+    background-color: hsl(225, 100%, 98%);
+    margin-left: 2rem;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.bottom-cont:hover {
+    filter: brightness(95%);
+}
+
+.active.bottom-cont:hover {
+    filter: brightness(130%);
+}
+
+.page-views, .retweets {
+    margin-left: 0;
+}
+
+.percent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.percent img {
+    margin-right: 5px;
+}
+
+.inner-cont-bottom h3 {
+    font-size: 2rem;
+}
+
+.inner-cont-bottom {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-top: 1rem;
+}
+
+.percent .down-p {
+    color: hsl(356, 69%, 56%);
+    font-weight: 700;
+}
+
+.percent p {
+    font-weight: 700;
+    color: hsl(163, 72%, 41%);
+}
+
+.inner-cont p {
+    font-size: 12px;
+    color: hsl(163, 72%, 41%);
+}
+
+.inner-cont .last-p {
+    font-size: 12px;
+    color: hsl(356, 69%, 56%);
+}
+
+.inner-cont-bottom p {
+    color: hsl(228, 12%, 44%);
+    font-weight: 700;
+}
+
+@media (max-width:500px) {
+    .top-container {
+        display: flex;
+        flex-direction: column;
+        margin: -1rem 1rem;
+    }
+
+    .cont1 {
+        margin-left: 2rem;
+    }
+
+    .cont1, .cont2, .cont3 {
+        margin-bottom: 1.5rem;
+        
+    }
+
+    .cont {
+    margin-top: 0;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 10rem;
+        padding: 0 2rem;
+        position: relative;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .screen-mode {
+        display: flex;
+        justify-content: space-between;
+        border-top: 2px solid hsl(228, 12%, 44%);
+    
+    }
+    
+    .mode-text {
+        position:static;
+        right: 0;
+        top: 0;
+        font-size: 14px;
+
+    }
+
+    .label {
+        top: 5.5rem;
+        right: 2rem;
+    }
+
+    /* bottom styling */
+
+    .overview {
+        font-size: 1.5rem;
+        margin: 2rem 2rem 3rem 3rem;
+    }
+
+    .bottom-container {
+        margin: 1rem 1rem 5rem;
+    }
+
+    .first-inner, .second-inner{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .page-views, .retweets {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: -1.5rem;
+    }
+
+    .bottom-cont {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+
+
+}
