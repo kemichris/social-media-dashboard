@@ -14,6 +14,7 @@ body {
     flex-direction: column;
     justify-content: center;
 
+
 }
 
 h1 {
@@ -291,16 +292,134 @@ header {
     font-weight: 700;
 }
 
+@media (max-width:1330px) {
+    header {
+        padding: 0 5rem;
+        
+    }
+    
+    .top-container {
+        margin: 0 5rem;
+    }
+
+    .overview {
+        margin: 2rem 5rem;
+    }
+
+    .bottom-container {
+        margin: 0 5rem 5rem;
+    }
+}
+
+@media (max-width:1230px) {
+    header {
+        padding: 0 2rem;
+        
+    }
+    
+    .top-container {
+        margin: 0 2rem;
+    }
+
+    .overview {
+        margin: 2rem 2rem;
+    }
+
+    .bottom-container {
+        margin: 0 2rem 5rem;
+    }
+}
+
+@media (max-width:1180px) {
+    .top-container, .first-inner, .second-inner {
+        display: flex;
+        flex-wrap: wrap;
+        width: 600px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cont>*, .bottom-cont>*{
+        flex: 1 1 255px;
+        /* margin: 10px; */
+      }
+
+      .cont3, .insta-like, .you-like {
+        margin-left: 0;
+      }
+
+      .cont3, .cont4, .insta-like, .insta-views, .you-like, .you-views{
+        margin-top: 2rem;
+      }
+}
+
+@media (max-width:750px) {
+    .mode-text {
+        position: absolute;
+        right: 8rem;
+        top: .8rem;
+        
+    }
+    .label {
+        top: 1.5rem;
+        right: 3rem;
+    }
+    
+}
+
+@media (max-width:600px) {
+    .top-container, .first-inner, .second-inner {
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cont>*, .bottom-cont>*{
+        flex: 1 1 255px;
+        /* margin: 10px; */
+      }
+
+      .cont2, .cont4, .f-like, .insta-views, .t-like, .you-views {
+        margin-left: 0;
+      }
+
+      .cont2, .f-like, .t-like {
+        margin-top: 2rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+    }
+
+    .mode-text {
+        right: 6rem;
+        top: .8rem;
+        
+    }
+    .label {
+        top: 1.5rem;
+        right: 1rem;
+        
+    }
+    
+}
+
 @media (max-width:500px) {
     .top-container {
         display: flex;
-        flex-direction: column;
-        margin: -1rem 1rem;
+        flex-wrap: wrap;
+        width: 300px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -2rem;
     }
 
-    .cont1 {
-        margin-left: 2rem;
-    }
+   
 
     .cont1, .cont2, .cont3 {
         margin-bottom: 1.5rem;
