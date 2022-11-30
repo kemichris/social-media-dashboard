@@ -409,14 +409,8 @@ header {
 }
 
 @media (max-width:500px) {
-    .top-container {
-        display: flex;
-        flex-wrap: wrap;
-        width: 300px;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: -2rem;
+    .top-container, .first-inner, .second-inner {
+        margin-top: -1rem;
     }
 
    
@@ -474,23 +468,15 @@ header {
         margin: 1rem 1rem 5rem;
     }
 
-    .first-inner, .second-inner{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .page-views, .retweets {
-        margin-left: 2rem;
-        margin-right: 2rem;
-        margin-top: -1.5rem;
+    .retweets {
+       
+        margin-top: 4rem;
     }
 
     .bottom-cont {
         margin-left: 2rem;
         margin-right: 2rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 0;
     }
-
-
 
 }
